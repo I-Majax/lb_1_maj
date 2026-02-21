@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МузLove</title>
     <style>
+        header {
+            background-color: #00ffe5;
+        }
+        .cups {
+            font-variant: small-caps;
+            font-style: italic;
+        }
         .stile {
             display: flex;
             flex: 1;
@@ -28,16 +35,32 @@
         .weight {
             font-weight: bolder;
         }
+        .search {
+            margin: 45px;
+        }
+        .border {
+            border: 2px solid #000;
+        }
+        .birthday {
+            font-size: 28px;
+            background-color: #ffae00;
+            text-decoration: underline;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        footer {
+            background-color: #00ffe5;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="stile Center">
+        <div class="Center">
             <img src="src\logo.png" alt="Logo" width="100" hight="100">
-            <form action="">
+            <form action="" class="search">
                 <input type="search" size="80">
                 <button type="submit">🔍︎</button>
             </form>
+            <img src="src\logo.png" alt="Logo" width="100" hight="100">
         </div>
         <div class="ST Center">
             <a href="https://ya.ru" target="_blank"><span>Главная</span> <span class="OP">Lorem ipsum dolor sit.</span></a>
@@ -48,11 +71,11 @@
         </div>
     </header>
     <main>
-        <h1 class="Center">Добро пожаловать на главную страницу МузLove</h1>
+        <h1 class="Center">Добро пожаловать на главную страницу <div class="cups">&nbsp;МузLove</div>!</h1>
         <h2 class="Center">Популярные товары</h2>
         <section class="stile">
             <article>
-                <img src="src\lot1.png" alt="Lot1" width="150">
+                <img src="src\lot1.png" alt="Lot1" width="150" class="border">
                 <b><br>Сумка для ноутбука 17,3</b>
                 <i>
                     <br>Сумка для ноутбука 17,3 с защитой от воды и плечевым ремнем LouiVearner – это стильный и надежный аксессуар для вашего ноутбука. 
@@ -63,7 +86,7 @@
             </article>
             <br>
             <article >
-                <img src="src\lot2.png" alt="Lot2" width="150">
+                <img src="src\lot2.png" alt="Lot2" width="150" class="border">
                 <b><br>Футболка программиста</b>
                 <i>
                     <br>Премиум футболка прямого кроя, создана из мягкого хлопка. Тренд. 
@@ -75,7 +98,7 @@
             </article>
             <br>
             <article >
-                <img src="src\lot3.png" alt="Lot3" width="150">
+                <img src="src\lot3.png" alt="Lot3" width="150" class="border">
                 <b><br>Беспроводные наушники COMMO One 2.0</b>
                 <i>
                     <br> Commo — это бренд мобильных аксессуаров и электроники, придуманный в Яндекс Фабрике.
@@ -86,10 +109,16 @@
                 <a href="https://yandex.ru">Добавить в корзину</a>
             </article>
         </section>
+        <br>
+        <p>
+            <span class="Center birthday border">
+                У тебя день рождения? Предъяви паспорт и получи скидку в 10% на любую позицию товара!
+            </span>
+        </p>
         <hr>
     </main>
     <footer>
-        <div class="F"><span>© 2026  ООО «Зеленоглазое такси»</span></div>
+        <div class="F"><span>&copy; 2026  ООО «Зеленоглазое такси»</span></div>
         <div class="F"><span>+7 (000) 000-00-00</span></div>
         <div class="F"><a href="https://vk.com/majaxiarst" target="_blank">VK</a></div>
     </footer>
